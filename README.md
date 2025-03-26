@@ -1,1 +1,1 @@
-# GDSC-Universe
+# GDSC-SOLAR

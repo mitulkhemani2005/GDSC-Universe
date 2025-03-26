@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-decoration: none;
+}
+html{
+    scroll-snap-type: y mandatory;
+    scroll-behavior:smooth;
+}
+section{
+    scroll-snap-align: start ;
+    height: 100vh;
+    width: 100%;
+    min-width: 500px;
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+ul{
+    font-family: "Inter", sans-serif;
+}
+/* added by me info-center */
+.info-center{               
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #430E49,#100A33);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #430E49;
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px; 
+    font-weight: 500;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+                                                                /* SLIDE ONE CSS */
+#slide-one{
+    background-image: url(./slide1/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 3;
+    font-family: "Inter", sans-serif;
+}
+/* NAVBAR TOP CSS */
+.navbar-top{
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7%;
+}
+.navbar-top-left{
+    width: fit-content;
+}
+.navbar-top-left span{
+    font-family: "Orbitron", sans-serif;
+    font-size: 180%; /* change from 30px to 160%*/
+    font-weight: 700;
+}
+.navbar-top-center{
+    width: 50%;
+}
+.navbar-top-center-list li{
+    display: inline;
+    
+}
+.navbar-top-center-list{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: small;
+}
+.navbar-top-right{
+    font-size:small;
+}
+/* TEXT AREA */
+#slide-one .text-area{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    position:relative;
+    left: 25%;
+    flex-direction: column;
+    justify-content: center;
+}
+#slide-one .text-area .big{
+    width: 100%;
+    font-size:72px;
+    font-weight: 900;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+#slide-one .text-area .small{
+    width: 100%;
+    font-size:small;
+    text-align: center;
+    margin-top: 25px;
+}
+/* LEARN MORE BUTTON */
+.btn-lm{
+    width: 20%;
+    height: 50px;
+    background-image: linear-gradient(to bottom right, blue ,red);
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 40%;
+    font-size:larger;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+/* PICTURE PLACMETN CSS */
+#moon{
+    position: absolute;
+    top: 20%;
+    left: -3%;
+    height: 20%;
+}
+#saturn{
+    position: absolute;
+    top: 47%;
+    height: 45%;
+    left: -10%;
+}
+#neptune{
+    height: 100px;
+    position: absolute;
+    bottom:-2%;
+    left: -1%;
+}
+#cold{
+    height: 125px;
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+    z-index: -1;
+}
+#jupiter{
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#mars{
+    position:absolute;
+    top:10%;
+    height: 40%;
+    right:0;
+}
+#earth{
+    position: absolute;
+    top:7%;
+    height:20%;
+    left:50%;
+    z-index: -1;
+}
+                                            /* SLIDE 2 */
+#slide-two{
+    background-image: url(./slide2/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.sun-circle{
+    height:40%;
+    width:80%;
+    border-radius: 75%;
+    background-color: #FF6700;
+    position: absolute;
+    left: 10%;
+    opacity: 0.5;
+    box-shadow: 0px 0px 100px 150px #FF6700;
+    z-index: 0;
+}
+#slide-two-sun{
+    position: absolute;
+    top:0;
+    width: 100%;
+    opacity: 0.9;
+    /* height: 50%; */
+}
+.slide-two-text-area{
+    height: 40%;
+    width: 50%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    font-size: smaller;
+    font-family: "Inter", sans-serif;
+}
+.slide-two-text-area h1{
+    font-size: 72px;
+    font-family: "Orbitron", sans-serif;
+}
+.slide-two-text-area .info1{
+    height: 40%;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.slide-two-text-area .info2{
+    height: 40%;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.slide-two-text-area .info{
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #430E49,#100A33);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #430E49;
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px; 
+    font-weight: 500;
+}
+                                                            /* SLIDE THREE STARTS */
+#slide-three{
+    background-image: url(./slide3/bg.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+#slide-three .text{
+    height: 90%;
+    width: 40%;
+    padding: 5%;
+    position: relative;
+    right:5%;
+    top: 5%;
+    font-family: "Inter", sans-serif;
+    font-size: smaller;
+}
+#slide-three .text h1{
+    font-size: 72px;
+    font-family: "Orbitron", sans-serif;
+}
+#slide-three .text .info{
+    margin-top: 25px;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+#slide-three .text .info .info1{
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #430E49,#100A33);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #430E49;
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px; 
+    font-weight: 500;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#slide-three .text .info .info2{
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #430E49,#100A33);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #430E49;
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#slide-three .text .info .info3{
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #430E49,#100A33);
+    border-style: solid;
+    border-width: 4px;
+    border-color: #430E49;
+    font-family: "Orbitron", sans-serif;
+    font-size: 24px; 
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+                                        /* SLIDE 4 STARTS HERE */
+#slide-four{
+    background-image: url(./bg.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slide-four .text{
+    height: 80%;
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    font-family: "Inter", sans-serif;
+}
+#slide-four .text h1{
+    font-size: 72px;
+    font-family: "Orbitron", sans-serif;
+}
+#slide-four .text .info{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+#slide-four .text .info .info1{
+    height: 40%;
+    width: 50%;
+}
+#slide-four .text .info .info2{
+    height: 40%;
+    width: 50%;
+}
+#slide-four-venus{
+    position: absolute;
+    right: 0;
+    bottom: -5%;
+    z-index: 1;
+}
+                                /* SLIDE 5 STARTS */
+#slide-five{
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+
+}
+#slide-five .text1{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-family: "Inter", sans-serif;
+}
+#slide-five .info{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+#slide-five .text2{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-family: "Inter", sans-serif;
+}
+#slide-five #arrow{
+    position: absolute;
+    height: 15%;
+    right: 20%;
+    bottom: 40%;
+}
+#slide-five-moon{
+    position: absolute;
+    bottom: 28%;
+    right: 8%;
+    height: 25%;
+}
+#slide-five-earth{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    left: 20%;
+}
+#slide-five-rocket{
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+#slide-five .text1 h1{
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;
+}
+#slide-five .text2 h1{
+    font-size: 36px;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+    left: 65%; 
+    display: inline;
+}
+                                            /* SLIDE 6 STARTS HERE */
+#slide-six{
+    background-image: url(./bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+#slide-six .pic-txt{
+    width: 70%;
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+#slide-six .info{
+    width:30%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+#slide-six .pic-txt .head{
+    height: 20%;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#slide-six .pic-txt .head h1{
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;    
+}
+#slide-six .pic-txt .head p{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+}
+#slide-six .pic-txt .moon{
+    margin-top: 5%;
+}
+#slide-six .pic-txt .arrow{
+    position:absolute;
+    height: 7%;
+    top: 45%;
+    left: 35%;
+}
+#slide-six .pic-txt .martian-moons{
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    top: 56%;
+    left: 40%;
+}
+#slide-six .pic-txt .martian-moons h1{
+    font-size: 30px;
+    font-family: "Orbitron", sans-serif;   
+}
+#slide-six .pic-txt .martian-moons p{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-size: smaller;
+}
+#slide-six .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#slide-six .info .box{
+    width: 75%;
+    height: 20%;
+}
+                                    /* SLIDE SEVEN STARTS */
+#slide-seven{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#slide-seven .txt{
+    height: 100%;
+    width: 60%;
+    /* background-color: aliceblue; */
+}
+#slide-seven .pic{
+    width: 40%;
+    height: 100%;
+}
+#slide-seven .txt .head{
+    width: 60%;
+    height: 20%;
+    margin: 5%;
+}
+#slide-seven .txt .head h1{
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;      
+}
+#slide-seven .txt .head p{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+}
+#slide-seven .txt .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    width: 100%;
+    height: 70%;
+    padding-left: 5%;
+}
+#slide-seven .txt .info div{
+    width: 40%;
+    height: 30%;
+}
+#slide-seven .txt .info .box1 .area{
+    height: 100%;
+    width: 50%;
+    margin-top: 10%;
+}
+#slide-seven .txt .info .box2 .area{
+    height: 100%;
+    width: 50%;
+    margin-top: 10%;
+}
+                                                            /* SLIDE EIGHT START */
+#slide-eight{
+    display: flex;
+    /* align-content: center; */
+    justify-content: space-between;
+    position: relative;
+}
+#slide-eight .pic{
+    width: 40%;
+    height: 100%;
+    /* background-color: wheat; */
+}
+#slide-eight .txt{
+    width:50%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+}
+#slide-eight .txt .head{
+    height: 30%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+    top: 10%;
+    left: 10%;
+}
+#slide-eight .pic h1{
+    position: absolute;
+    font-family: "Orbitron", sans-serif; 
+    font-size:medium;
+    top: 23%;
+    left: 10%;
+}
+#slide-eight .txt .info{
+    height: 60%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: end;
+}
+#slide-eight .txt .head h1{
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+    right: 10%;
+}
+#slide-eight .txt .head p{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-size: smaller;
+}
+#slide-eight .txt .info .b{
+    height: 40%;
+    width: 50%;
+}
+                                                /* SLIDE NINE STARTS HERE */
+#slide-nine{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+#slide-nine .txt{
+    height: 40%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right: 2%;
+    /* background-color: #FF6700; */
+}
+#slide-nine .pic{
+    height: 60%;
+    width: 100%;
+    /* background-color: aliceblue; */
+}
+#slide-nine .txt .head{
+    /* background-color: white; */
+    height: 50%;
+    width:30%;
+    position: relative;
+    left: 5%;
+}
+#slide-nine .txt .head h1{
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+}
+#slide-nine .txt .head p{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-size: smaller;
+}
+#slide-nine .txt .info{
+    /* background-color: aqua; */
+    height:50%;
+    width:40%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    right: 5%;
+}
+#slide-nine .txt .info div{
+    width: 48%;
+    height: 80%;
+}
+#slide-nine .pic{
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+}
+                        /* SLIDE TEN STARTAS HERE */
+#slide-ten{
+    position:relative;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: center;
+    align-content: center; */
+    z-index: 2;
+}
+#slide-ten .txt{
+    /* background-color: aliceblue; */
+    width:80%;
+    height:50%;
+    position: relative;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#slide-ten .txt h1{
+    display: inline;
+    font-size: 68px;
+    font-family: "Orbitron", sans-serif;
+    position: relative;
+}
+#slide-ten .txt .info{
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Orbitron", sans-serif;
+}
+#slide-ten .txt .info div{
+    height: 100%;
+    width: 35%;
+}
+#slide-ten .txt .para{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#slide-ten .txt .para p{
+    margin-top: 2%;
+    font-family: "Inter", sans-serif;
+    font-size: smaller;
+}
+#slide-ten .pic{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+                                        /* footer starts from here */
+#footer{
+    height: 40vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#footer .bg{
+    position: absolute;
+    width: 61.4%;
+    /* height: 100%; */
+    object-fit: cover;
+    z-index: 0;
+}
+#footer .box{
+    height: 90%;
+    width: 80%;
+    position: relative;
+    top: 5%;
+    left:10%;
+    background-color: #100A33;
+    z-index: 2;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 5%; */
+}
+#footer .box .txt{
+    width:50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+#footer .box .txt h1{
+    font-family: "Orbitron", sans-serif;
+    font-size: 36px;
+}
+#footer .box .txt p{
+    font-family: "Inter", sans-serif;
+    font-size: small;
+}
+#footer .box .txt .mail{
+    position: relative;
+    width:60%;
+    height: 20%;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+#footer .box .txt .mail .search{
+    background-image: linear-gradient(to top left, #CD1013, #FF0004, #2500FF);
+    width: 25%;
+    Height: 80%;
+    position: absolute;
+    right: 5%;
+    top:10%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#footer .box .txt .mail .search h4{
+    font-family: "Orbitron", sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+}
+#footer .box .txt .mail .search .circle{
+    background-color: #f1f1f1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footer .box .txt .mail span{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: black;
+    font-family: "Inter", sans-serif;
+}
+#footer .box .foot{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 0 5px 0 5px; */
+}
+#footer .box .foot .options{
+    width: 50%;
+}
+#footer .box .foot .options ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.fa-solid{
+    color:black;
+}
